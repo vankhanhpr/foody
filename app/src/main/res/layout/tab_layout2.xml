@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tab_listview_angi_moinhat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/vienchobutton">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="60px">
+                                <TextView
+                                    android:layout_width="257px"
+                                    android:layout_height="50px"
+                                    android:id="@+id/textView_moinhat"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/red1"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="10px"
+                                    android:text="Mới nhất">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="20px"
+                                android:layout_marginLeft="90px"
+                                android:gravity="center">
+                                <ImageButton
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:layout_marginLeft="40px"
+                                    android:src="@drawable/icon_arrow_down_xs"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab_danh_muc_angi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/vienchobutton">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="60px">
+                                <TextView
+                                    android:layout_width="257px"
+                                    android:layout_height="60px"
+                                    android:id="@+id/tv_angi_danhmuc"
+                                    android:textSize="15sp"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="10px"
+                                    android:text="Danh mục">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="20px"
+                                android:layout_marginLeft="90px"
+                                android:gravity="center">
+
+                                <ImageButton
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:layout_marginLeft="40px"
+                                    android:src="@drawable/icon_arrow_down_xs"
+                                    android:id="@+id/imageButton" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab_thanh_pho_angi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/vienchobutton">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="60px">
+                                <TextView
+                                    android:layout_width="257px"
+                                    android:layout_height="60px"
+                                    android:id="@+id/tv_listview_angi_thanhpho1"
+                                    android:textSize="15sp"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="10px"
+                                    android:text="TP.HCM">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="20px"
+                                android:layout_marginLeft="90px"
+                                android:gravity="center">
+                                <ImageButton
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:layout_marginLeft="40px"
+                                    android:src="@drawable/icon_arrow_down_xs"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+           <!--ăn gì Scroll-->
+            <LinearLayout
+                android:id="@+id/tab_chinh1"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/lv_angi_nhahang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tab_listview_angi_danhmuc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <ListView
+                    android:id="@+id/lv_moinhat_angi_danhmuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="980px"
+                    android:background="@color/while1">
+                </ListView>
+                <LinearLayout
+                    android:id="@+id/tab_huy_angi"
+                    android:layout_width="match_parent"
+                    android:layout_height="75px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hủy"
+                        android:textSize="45px"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--ăn gì thành phố-->
+            <LinearLayout
+                android:id="@+id/tab_listview_angi_thanhpho"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_listview_thanhpho_angi_khanh"
+                            android:layout_width="170dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:text="TP.HCM"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab_select_province_angi"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/icon_listview_thanhpho"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:text="Đổi tỉnh thành"
+                            android:gravity="center"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/lv_moinhat_angi_thanhpho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/while1">
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+            <!--ăn gì mới nhất-->
+            <LinearLayout
+                android:id="@+id/tab_listview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_moinhat_angi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+                <LinearLayout
+                    android:id="@+id/tab_huy3"
+                    android:layout_width="match_parent"
+                    android:layout_height="75px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hủy"
+                        android:textSize="45px"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_huy_angi"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:text="Hủy"
+                android:visibility="gone"
+                android:background="@color/while1"
+                android:textAllCaps="false" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+    <!--ScrollView-->
+
+
+</LinearLayout>

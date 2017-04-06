@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+
+            android:background="@color/red1">
+            <ImageView
+            android:id="@+id/imv_f"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_foody_anuong"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="30px"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/duongvien_goctron"
+                    android:padding="2dp">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tablayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabBackground="@drawable/tab_text_color"
+                        app:tabSelectedTextColor="@color/black"
+                        app:tabTextColor="@color/colorWhite"
+                        app:tabTextAppearance="@style/MyCustomTabText"
+                        android:background="@color/colorWhite">
+                        <android.support.design.widget.TabItem
+                    android:id="@+id/tab_ODau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ở đâu"
+                    android:textSize="15sp"
+                    />
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tab_AnGi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Ăn gì"
+                        android:textSize="15sp"/>
+                </android.support.design.widget.TabLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imv_mainplus"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cong2"/>
+            </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_button_nagi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vienchobutton"
+        android:layout_marginTop="-75px"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imv_home"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/icon2"
+                android:layout_marginLeft="40px"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imv_luutru"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/icon1"
+                android:layout_marginLeft="20px"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imv_timkiem"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/icon4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imv_thongbao"
+                android:layout_width="40px"
+                android:layout_height="45px"
+                android:layout_marginTop="2px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/icon3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imv_dangnhap"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/icon5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

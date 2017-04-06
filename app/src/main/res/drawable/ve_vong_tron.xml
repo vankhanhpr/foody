@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Set màu nền-->
+    <solid
+        android:color="#20a11a" >
+    </solid>
+
+    <!-- đặt thuộc tính màu và độ rộng của đường viền -->
+  <!--  <stroke
+        android:width="1.3dp"
+        android:color="#FFFFFF" >
+    </stroke>
+    <corners
+        android:radius="300dp" >
+    </corners-->>
+
+</shape>

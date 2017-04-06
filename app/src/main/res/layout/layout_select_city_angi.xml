@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:orientation="vertical"
+                    android:background="@color/red1">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:orientation="horizontal"
+                    android:background="@drawable/vienchobutton">
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:text="Tự động xác định vị trí"
+                        android:textColor="@color/black_text"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/icon_listview_vitri"/>
+                </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_vitri">
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/red1"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/imv_back10"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/back"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/red1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Chọn tỉnh/Thành phố"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17px"
+                    android:textColor="@color/while1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xong"
+                    android:textSize="18sp"
+                    android:textColor="@color/while1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="#ffcc0000"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/back_button_choose_provine"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imv_lv_back_angi"
+                    android:layout_width="50.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:padding="10.0dip"
+                    android:src="@drawable/back"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/choose_provine_top_bar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_lv_xong"
+                android:layout_toRightOf="@+id/back_button_choose_provine"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="Chọn tỉnh/Thành phố"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_lv_xong_angi"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center|right"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:text="Xong"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listview_province_angi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:childDivider="#ffeeeeee"
+                android:clickable="false"
+                android:divider="#ffdddddd"
+                android:dividerHeight="1.0px"
+                android:indicatorLeft="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

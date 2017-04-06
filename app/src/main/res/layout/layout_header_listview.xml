@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imv_lv_search_top"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/icon_serach" />
+
+        <EditText
+            android:id="@+id/edittext_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:textColor="@color/black_text1"
+            android:ems="10"
+            android:hint="Tìm nhanh"
+            android:padding="10.0dip"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imv_lv_end"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:padding="10.0dip"
+            android:src="@drawable/icon_listview_search"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:id="@+id/tab_lv_xacdinhvitri"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:padding="8.0dip"
+            android:text="Tự động xác định vị trí"
+            android:textColor="#ff000000"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="15.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8.0dip"
+            android:src="@drawable/icon_listview_vitri"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_lv_xacdinhquocgia"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#ffefefef"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_view_country_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:padding="8.0dip"
+            android:text="Vietnam"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|right"
+            android:text="Đổi quốc gia"
+            android:textColor="@color/black_text"
+            android:textSize="10.0sp" />
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="25.0dip"
+            android:src="@drawable/icon_listview_right" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#ffdddddd" />
+</LinearLayout>

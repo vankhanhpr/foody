@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+       <!-- Phần hearder-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tab_moi_nhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/vienchobutton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px">
+                            <TextView
+                                android:layout_width="257px"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_moinhat_odau"
+                                android:textSize="15sp"
+                                android:textColor="@color/red1"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="10px"
+                                android:text="Mới nhất">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20px"
+                            android:layout_marginLeft="90px"
+                            android:gravity="center">
+                            <ImageButton
+                                android:layout_width="20px"
+                                android:layout_height="20px"
+                                android:layout_marginLeft="40px"
+                                android:src="@drawable/icon_arrow_down_xs"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_danh_muc500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/vienchobutton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px">
+                            <TextView
+                                android:layout_width="257px"
+                                android:layout_height="60px"
+                                android:id="@+id/tv_odau_danhmuc"
+                                android:textSize="15sp"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="10px"
+                                android:text="Danh mục">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20px"
+                            android:layout_marginLeft="90px"
+                            android:gravity="center">
+                            <ImageButton
+                                android:layout_width="20px"
+                                android:layout_height="20px"
+                                android:layout_marginLeft="40px"
+                                android:src="@drawable/icon_arrow_down_xs"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_thanh_pho_odau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/vienchobutton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px">
+                            <TextView
+                                android:layout_width="257px"
+                                android:layout_height="60px"
+                                android:id="@+id/textView_odau_thanhpho_hcm"
+                                android:textSize="15sp"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="10px"
+                                android:text="TP.HCM">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20px"
+                            android:layout_marginLeft="90px"
+                            android:gravity="center">
+                            <ImageButton
+                                android:layout_width="20px"
+                                android:layout_height="20px"
+                                android:layout_marginLeft="40px"
+                                android:src="@drawable/icon_arrow_down_xs"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+       <!-- ListView o dau moi nhat -->
+        <LinearLayout
+            android:id="@+id/tab_listview_odau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/listgray"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_moinhat_odau"
+                android:layout_width="match_parent"
+                android:layout_height="980px"
+                android:background="@color/colorGray">
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/tab_huy3"
+                android:layout_width="match_parent"
+                android:layout_height="75px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hủy"
+                    android:textSize="45px"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+       <!-- Listview o dau danh muc-->
+        <LinearLayout
+            android:id="@+id/tab_listview_odau_danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/lv_moinhat_odau_danhmuc"
+                android:layout_width="match_parent"
+                android:layout_height="980px"
+                android:background="@color/while1">
+            </ListView>
+            <LinearLayout
+                android:id="@+id/tab_huy"
+                android:layout_width="match_parent"
+                android:layout_height="75px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hủy"
+                    android:textSize="45px"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+       <!-- LitView o dau  thanh pho-->
+        <LinearLayout
+            android:id="@+id/tab_listview_odau_thanhpho"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_listview2_thanhpho_khanh"
+                        android:layout_width="170dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="17dp"
+                        android:text="TP.HCM"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_select_province"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/icon_listview_thanhpho"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="Đổi tỉnh thành"
+                        android:gravity="center"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/lv_moinhat_odau_thanhpho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/while1">
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- ScroonView-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/tab_chinh_odau">
+
+            <ListView
+                android:id="@+id/anhkhanheptrai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_huy"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:text="Hủy"
+                android:background="@color/while1"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
